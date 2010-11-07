@@ -4,6 +4,9 @@ IMAGES=
 $(RESULT): $(IMAGES)
 
 %.dvi: %.tex
+	# create table of contents
+	latex $<
+	# create document
 	latex $<
 
 %.ps: %.dvi
@@ -24,11 +27,13 @@ evince: $(RESULT)
 %.eps: %.epsi
 	cp $< $@
 
+rebuild: clean all
 
+all: $(RESULT)
 
 clean:
 	rm -f *~
 	rm -f *.ps *.pdf
-	rm -f *.dvi *.aux *.log
+	rm -f *.dvi *.aux *.log *.toc
 	rm -f *.epsi
 
