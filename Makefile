@@ -33,7 +33,7 @@ all: $(RESULT)
 
 clean:
 	rm -f *~
-	rm -f *.ps *.pdf
+	rm -f *.ps
 	rm -f *.dvi *.aux *.log *.toc
 	rm -f *.epsi
 
