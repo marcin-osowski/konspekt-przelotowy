@@ -2,19 +2,31 @@
 \usepackage[utf8]{inputenc}
 \usepackage{polski}
 \usepackage{newlfont}
+\usepackage{hyperref}
 \title{Pierwsze przeloty szybowcowe}
 \author{Osowski~Marcin\\Aeroklub~Warmińsko-Mazurski}
+\hypersetup{
+    pdftitle={Pierwsze przeloty szybowcowe},    % title
+    pdfauthor={Osowski Marcin},     % author
+    colorlinks=true,          % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links
+    citecolor=black,          % color of links to bibliography
+    filecolor=black,          % color of file links
+    urlcolor=black            % color of external links
+}
+
 \begin{document}
 
 \maketitle
 \newpage
 
 \begin{abstract}
-W tym opracowaniu zebrałem garść porad dla pilotów szybowcowych
+W tym opracowaniu zebrałem garść informacji dla pilotów szybowcowych
 pragnących opuścić stożek dolotowy i rozpocząć
 przygodę przelotową. Informacje tu zawarte bazują na moim
-własnym doświadczeniu i cudzych opracowaniach. Treść została
-podzielona na trzy części: przygotowanie do przelotu, taktyka przelotowa, 
+własnym doświadczeniu i cudzych opiniach, których autorstwo jest na ogół
+trudne do ustalenia. Treść została podzielona na trzy części:
+przygotowanie do przelotu, taktyka przelotowa, 
 lądowanie w terenie przygodnym i postępowanie po lądowaniu.
 \end{abstract}
 \newpage
@@ -45,6 +57,8 @@ Potrzebujesz:
 \item pomocy nawigacyjnych
 \item przygotowanego wózka transportowego
 \item (do lotów warunkowych) rejestratora
+%TODO - dodać przygotowanie trasy do pierwszego przelotu
+% na dużo przed dniem przelotu
 \end{enumerate}
 
 \subsubsection{Aeroklubowa zgoda na wykonanie przelotu}
@@ -91,6 +105,61 @@ szybowca na skraj pola.
 
 \subsubsection{Rejestrator (do lotów warunkowych)}
 [TODO] % TODO
+
+\subsection{W dniu przelotu}
+Jeżeli postąpiłeś/postąpiłaś zgodnie z powyżej wymienionymi wskazówkami to
+zostaje niewiele do zrobienia. W zasadzie działania można ograniczyć do:
+\begin{enumerate}
+\item przeczytania prognozy pogody
+\item sprawdzenia zajętości stref powietrznych
+\item wytyczenia trasy
+\item odejścia na trasę :)
+\end{enumerate}
+
+\subsubsection{Prognoza pogody}
+Jest bardzo wiele modeli pogodowych użytecznych dla szybowników. Wymienię
+te, których sam używałem i na temat których mam jakieś zdanie.
+\begin{enumerate}
+\item \url{http://rasp.linta.de/GERMANY/index_en.html} -- model napisany
+przez szybownika-meteorologa (Dr. John W. Glendening) dla szybowników.
+Obliczany co 24 godziny (nocą) na 48 godzin do przodu. Moim skromnym
+zdaniem jest to znakomite narzędzie do planowania trasy przelotu.
+Jeżeli nie chcesz wgłębiać się w zbyt wiele szczegółów, to najważniejszymi
+parametrami są ,,Thermal Updraft Velocity and B/S ratio'' (siła noszeń) oraz
+,,Cu Cloudbase where Cu Potential $>$ 0'' (podstawy chmur tam, gdzie chmur
+się spodziewamy).
+
+\item \url{http://sat24.com/pl} -- zdjęcia satelitarne w paśmie widzialnym~i
+podczerwieni, robione co 15 minut. Niezastąpiony wskaźnik rozwoju termiki
+i frontów atmosferycznych.
+
+\item \url{http://new.meteo.pl/} -- dwa modele: COAMPS i UM. Model COAMPS
+niestety słabo wpasowywuje się w pogodę, natomiast UM jest znakomity do
+wglądu krótkoterminowego (obliczany jest co 6 godzin na 48 godzin do przodu).
+
+\item \url{http://ows.public.sembach.af.mil/index.cfm?section=SFCProg} -- 
+prognoza przygotowywana przez NATO. Bardzo skuteczna, natomiast nie
+skupia się na wszystkich zjawiskach (przewiduje tylko układ ciśnień i
+schemat frontów atmosferycznych).
+
+\item \url{http://www.windguru.cz/pl/} -- model GFS, jeden z wielu.
+Prognoza długoterminowa.
+
+\item \url{http://www.imgw.pl/} -- zakładka ,,Awiacja''. Prognoza lotnicza.
+Wymaga znajomości specjalistycznych skrótów.
+
+\end{enumerate}
+\subsubsection{Zajętość stref powietrznych}
+Do sprawdzenia na stronie \url{http://amc.pata.pl/}, zakładka
+,,AUP bieżący'' lub na mapie ,,Elementy przestrzeni/AUP''. Można też
+telefonicznie, numery do odnalezienia na stronie AMC PATA.
+\subsubsection{Wytyczanie trasy}
+Niezastąpiona staje się mapa z zaznaczonymi punktami zwrotnymi:
+
+[TODO] % TODO: dodać zdjęcie mapy punktów zwrotnych
+\noindent
+Dobrze jest w tym momencie zasięgnąć opinii doświadczonych szybowników.
+
 \newpage
 
 \section{Taktyka przelotowa}
