@@ -3,6 +3,7 @@
 \usepackage{polski}
 \usepackage{newlfont}
 \usepackage{hyperref}
+\usepackage[dvips]{graphicx}
 \title{Pierwsze przeloty szybowcowe}
 \author{Osowski~Marcin\\Aeroklub~Warmińsko-Mazurski}
 \hypersetup{
@@ -17,6 +18,7 @@
 
 \begin{document}
 
+%TODO: uzgadnianie czasowników w trybie rozkazującym z płcią czytelnika.
 \maketitle
 \newpage
 
@@ -56,6 +58,7 @@ Potrzebujesz:
 \item aeroklubowej zgody na przelot szybowcem
 \item pomocy nawigacyjnych
 \item przygotowanego wózka transportowego
+\item naładowanego telefonu komórkowego
 \item (do lotów warunkowych) rejestratora
 %TODO - dodać przygotowanie trasy do pierwszego przelotu
 % na dużo przed dniem przelotu
@@ -103,6 +106,11 @@ linki transportowej. Zdarza się, że lądujemy na polu w pobliżu którego
 rolnicy wykonują jakieś prace -- można wtedy poprosić ich o ściągnięcie
 szybowca na skraj pola.
 
+\subsubsection{Naładowany telefon komórkowy}
+Oczywiście na wypadek lądowania w polu. Zapisz sobie w książce adresowej
+numery telefonów do Szefa Wyszkolenia, instruktorów szybowcowych i 
+Państwowej Komisji Badania Wypadków Lotniczych.
+
 \subsubsection{Rejestrator (do lotów warunkowych)}
 [TODO] % TODO
 
@@ -121,7 +129,7 @@ Jest bardzo wiele modeli pogodowych użytecznych dla szybowników. Wymienię
 te, których sam używałem i na temat których mam jakieś zdanie.
 \begin{enumerate}
 \item \url{http://rasp.linta.de/GERMANY/index_en.html} -- model napisany
-przez szybownika-meteorologa (Dr. John W. Glendening) dla szybowników.
+przez szybownika-meteorologa (Dr. John W. Glendening).
 Obliczany co 24 godziny (nocą) na 48 godzin do przodu. Moim skromnym
 zdaniem jest to znakomite narzędzie do planowania trasy przelotu.
 Jeżeli nie chcesz wgłębiać się w zbyt wiele szczegółów, to najważniejszymi
@@ -151,13 +159,13 @@ Wymaga znajomości specjalistycznych skrótów.
 \end{enumerate}
 \subsubsection{Zajętość stref powietrznych}
 Do sprawdzenia na stronie \url{http://amc.pata.pl/}, zakładka
-,,AUP bieżący'' lub na mapie ,,Elementy przestrzeni/AUP''. Można też
+,,AUP bieżący'' lub zakładka ,,Elementy przestrzeni/AUP''. Można też
 telefonicznie, numery do odnalezienia na stronie AMC PATA.
 \subsubsection{Wytyczanie trasy}
 Niezastąpiona staje się mapa z zaznaczonymi punktami zwrotnymi:
-
-[TODO] % TODO: dodać zdjęcie mapy punktów zwrotnych
-\noindent
+\begin{center}
+\includegraphics[scale=0.25]{mapa_punkty_zwrotne.eps}
+\end{center}
 Dobrze jest w tym momencie zasięgnąć opinii doświadczonych szybowników.
 
 \newpage
@@ -167,6 +175,106 @@ Dobrze jest w tym momencie zasięgnąć opinii doświadczonych szybowników.
 \newpage
 
 \section{Lądowanie w terenie przygodnym}
-[TODO] % TODO
+\subsection{Wybór pól}
+Jeżeli znajdziesz się nisko (500 metrów AGL lub niżej) musisz wybrać pola
+do lądowania (tak, tak: pola a nie jedno pole). Dalsze czynności powinieneś
+wykonywać pozostając w stożku dolotowym do pól. Decyzja o przerwaniu
+poszukiwania noszeń należy do pilota, jednak uczeń-pilot zobowiązany jest
+podjąć ją na co najmniej 300 metrach AGL. Ponieważ lądowanie w polu 
+jest czynnością stresującą (w szczególności pierwsze lądowanie)
+pilot powinien postępować według dobrze zrozumianego
+sposobu. Czyli, od momentu znalezienia się na 500-metrach:
+\begin{enumerate}
+\item Określasz siłę i kierunek wiatru. \\
+    Na ogół pilot szybowcowy w tym momencie już posiada
+    wystarczające informacje na ten temat odczytując je z lusterka i/lub
+    odczuwając wpływ wiatru podczas krążenia. Niemniej dobrymi wskaźnikami są:
+    powierzchnia jeziora, wszelkiego rodzaju dymy. Jeśli siła wiatru jest
+    znikoma (poniżej $3\frac{m}{s} \approx 10\frac{km}{h}$) to wpływ
+    wiatru można pominąć -- lądowanie w polu wymaga koncentracji uwagi
+    na innych, ważniejszych sprawach.
+
+\item Wybierasz pola zwracając uwagę głównie na ich rozmiary i przeszkody na
+    podejściu, mniej na rodzaj uprawy.\\
+    Z obserwacji autora: lądowanie
+    na polu z niekorzystną uprawą nie jest tak niebezpieczne jak lądowanie
+    na polu za krótkim, z wysokim podejściem czy poprzecinanym drutami.
+    Jeżeli wiatr jest istotnym czynnikiem, a teren jest płaski
+    to rozważasz tylko jeden kierunek podejścia: pod wiatr. Natomiast
+    w terenie górzystym należy lądować wyłącznie pod stok, niezależnie
+    od kierunku wiatru.
+
+\item \begin{bf}Bardzo starannie szukasz drutów\end{bf} na wybranych
+    polach.\\
+    Druty na podejściu absolutnie dyskwalifikują pole jako lądowisko.
+    Fakty są takie, że w okolicach Olsztyna prawie każde pole jest
+    przecięte drutami.
+
+\item Jeżeli pól jest pod dostatkiem to możesz wybrać pole o najlepszej
+    powierzchni. \\
+    Najlepsze powierzchnie to:
+    \begin{enumerate}
+        \item Pola zaorane \\
+            Poznać je można po czarno-brązowym kolorze
+        \item Ścierniska \\
+            Są dobre o ile tylko nie występuje na nich słoma w postaci bali.
+            Kolor brązowy, prześwitują żółte pozostałości po zbożu.
+        \item Niska uprawa \\
+            Czyli między innymi: wczesna kukurydza, kapusta, buraki, świeżo
+            posiane zboże. Wygląd: zielone grządki między którymi
+            widać ciemniejszą ziemię.
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Podejście do lądowania w polu}
+Jeżeli poszukiwania noszeń zawiodły powinieneś/powinnaś:
+\begin{enumerate}
+\item Wejść do pozycji ,,z wiatrem'' \\
+    względem planowanego punktu przyziemienia.
+    Dobra wysokość dla tej fazy lotu to
+    200-300m AGL. Pojawia się istotny szczegół: \begin{bf}pozycja z
+    wiatrem powinna wypaść około 200-500m obok osi lądowania.\end{bf}
+    Jest to ważne, ponieważ przelatując zbyt blisko nad polem nie
+    zauważysz nierówności terenu. Przelatując nad samym polem w ogóle
+    go nie obejrzysz. 
+
+\item Ponownie obejrzeć pole\\
+    i ewentualnie skorzystać z innych wybranych pól. Różnica jest taka,
+    że tym razem jesteś dużo niżej i być może dopiero
+    teraz widać nierówności terenu lub druty uniemożliwiające bezpieczne
+    lądowanie.
+
+\item Wyjść na prostą\\
+    w dobrej odległości. Dobrej czyli też nie za małej. Zawracanie na
+    krawędzi krótkiego pola jest złym pomysłem, możesz się nie zmieścić.
+
+\item Wykonać esowanie, jeżeli znajdziesz się za wysoko.\\
+    Pamiętaj o zasadzie esowania: zakręty wykonujemy w stronę
+    lądowiska.
+
+\item Wylądować.\\
+    Jeżeli pole jest krótkie powinnaś/powinieneś zminimalizować energię
+    szybowca -- 
+    przelecieć kilka metrów nad ostatnią przeszkodą, na możliwie małej
+    prędkości (dostosowanej do typu szybowca i turbulencji).
+
+\end{enumerate}
+
+\subsection{Postępowanie po lądowaniu}
+Zadzwoń do kolegów i zrelaksuj się, spędzisz w tym miejscu ładnych
+kilka godzin~:).
+A tak na poważnie, zacznij od przeglądu szybowca, skupiając swoją
+uwagę na (ewentualnych) pęknięciach i zarysowaniach na kadłubie.
+Pamiętaj, że inny pilot może być zmuszonym do lądowania na twoim polu, zatem
+poproś widzów o pomoc w transporcie szybowca na skraj pola. Przydatna
+może okazać się linka którą radziłem zabrać ze sobą. Skorzystaj z
+telefonu informując Aeroklub o fakcie lądowania, stanie szybowca i planach
+powrotu.
+
+\subsection{Postępowanie w przypadku uszkodzenia szybowca}
+Jeżeli są ofiary wypadku to w pierwszej kolejności wykonaj telefon na numer
+alarmowy (112 lub 999). Zabezpiecz teren wokół szybowca (tak, aby dało się
+zebrać konieczne dowody). Poinformuj Aeroklub i Państwową Komisię Badania
+Wypadków Lotniczych. Wykonaj serię zdjęć jeżeli masz aparat fotograficzny.
 
 \end{document} 

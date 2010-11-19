@@ -1,5 +1,5 @@
 RESULT=przeloty.pdf
-IMAGES=
+IMAGES=mapa_punkty_zwrotne.eps
 
 $(RESULT): $(IMAGES)
 
@@ -27,6 +27,9 @@ evince: $(RESULT)
 %.eps: %.epsi
 	cp $< $@
 
+%.eps: %.jpg
+	cd bin/; ./jpeg2eps ../$<
+
 rebuild: clean all
 
 all: $(RESULT)
@@ -34,6 +37,6 @@ all: $(RESULT)
 clean:
 	rm -f *~
 	rm -f *.ps
-	rm -f *.dvi *.aux *.log *.toc
-	rm -f *.epsi
+	rm -f *.dvi *.aux *.log *.toc *.out
+	rm -f *.epsi *.eps
 
