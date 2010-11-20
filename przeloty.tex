@@ -36,7 +36,7 @@ lądowanie w terenie przygodnym i postępowanie po lądowaniu.
 \begin{center}\begin{huge}
 Zrzeczenie się odpowiedzialności
 \end{huge}\end{center}
-Informacje zawarte w niniejszym opracowaniu oparte są o doświadczenie
+Informacje zawarte w niniejszym opracowaniu oparte są o obserwacje
 autora i inne tego typu opracowania; mają znaczenie wyłącznie informacyjne
 i edukacyjne. Pomimo dołożenia wielu starań nie mogą być stosowane
 jako porady i nie mogą być podstawą roszczeń wobec autora,
@@ -44,10 +44,20 @@ Aeroklubu Warmińsko-Mazurskiego ani kogokolwiek rozprzestrzeniającego
 ten dokument.
 \newpage
 
+
 \tableofcontents
 \newpage
 
+
+\section{Wstęp, czyli grupa odbiorców tego opracowania}
+Opracowanie to jest skierowane do pilotów i uczniów-pilotów o niewielkim
+doświadczeniu. Wymaga jednak znajomość podstaw latania szybowcowego, w tym
+pewnego doświadczenia w lataniu termicznym.
+\newpage
+
+
 \section{Przygotowania do przelotu}
+%TODO: "A więc" nie pasuje do reszty tekstu
 A więc zdecydowałeś się/zdecydowałaś się wykonać przelot szybowcowy, być może
 pierwszy w Twoim życiu. Zacznijmy od wypunktowania tego co należy
 przygotować wcześniej.
@@ -58,10 +68,8 @@ Potrzebujesz:
 \item aeroklubowej zgody na przelot szybowcem
 \item pomocy nawigacyjnych
 \item przygotowanego wózka transportowego
-\item naładowanego telefonu komórkowego
+\item przygotowanego telefonu komórkowego
 \item (do lotów warunkowych) rejestratora
-%TODO - dodać przygotowanie trasy do pierwszego przelotu
-% na dużo przed dniem przelotu
 \end{enumerate}
 
 \subsubsection{Aeroklubowa zgoda na wykonanie przelotu}
@@ -101,18 +109,40 @@ dokumenty (świadectwo rejestracji, ważne ubezpieczenie OC). Dobrze jest
 umówić się z kimś co do ewentualnego transportu szybowca z pola -- po
 lądowaniu zazwyczaj mamy mniejsze możliwości uzgadniania takich kwestii.
 
-Dobrym zwyczajem jest zabieranie ze sobą do szybowca kliku metrów
+Przydatnym zwyczajem jest zabieranie ze sobą do szybowca kliku metrów
 linki transportowej. Zdarza się, że lądujemy na polu w pobliżu którego
 rolnicy wykonują jakieś prace -- można wtedy poprosić ich o ściągnięcie
 szybowca na skraj pola.
 
-\subsubsection{Naładowany telefon komórkowy}
+\subsubsection{Przygotowany telefon komórkowy}
 Oczywiście na wypadek lądowania w polu. Zapisz sobie w książce adresowej
 numery telefonów do Szefa Wyszkolenia, instruktorów szybowcowych i 
 Państwowej Komisji Badania Wypadków Lotniczych.
 
 \subsubsection{Rejestrator (do lotów warunkowych)}
-[TODO] % TODO
+Rejestrator to urządzenie certyfikowane przez FAI, posiada odbiornik
+GPS i wyskalowaną sondę ciśnieniową. Zapis rejestratora jest dowodem
+wykonania wyczynu, jest konieczny aby uznany został
+wyczyn w postaci przelotu lub przewyższenia. Warunek pięcio-godzinny
+do srebrnej odznaki nie wymaga użycia rejestratora.
+
+W Aeroklubie Warmińsko-Mazurskim dostępny
+jest rejestrator sekcji szybowcowej LX Colibri. Nie będę tu powarzał
+instrukcji obsługi tego rejestratora która jest dostępna na stronie
+firmy LX Navigation: \\
+\url{http://www.lxnavigation.si/}. \\
+
+\noindent
+Istotna część: co koniecznie należy ustawić przed lotem.
+\begin{enumerate}
+\item Imię, nazwisko pilota
+\item Typ szybowca, znaki szybowca
+\item Deklaracja zadania (tylko przeloty)
+    Aby poprawnie zadeklarować zadanie musisz wprowadzić punkty zwrotne
+    zaplanowanej trasy, po czym zadeklarować trasę. Czyli doprowadzić
+    logger do komunikatu ,,Task~declared'' (to jest ważne, trasa nie
+    zadeklarowana to trasa nie ważna).
+\end{enumerate}
 
 \subsection{W dniu przelotu}
 Jeżeli postąpiłeś/postąpiłaś zgodnie z powyżej wymienionymi wskazówkami to
@@ -162,22 +192,61 @@ Do sprawdzenia na stronie \url{http://amc.pata.pl/}, zakładka
 ,,AUP bieżący'' lub zakładka ,,Elementy przestrzeni/AUP''. Można też
 telefonicznie, numery do odnalezienia na stronie AMC PATA.
 \subsubsection{Wytyczanie trasy}
-Niezastąpiona staje się mapa z zaznaczonymi punktami zwrotnymi:
+Przydatna jest mapa z zaznaczonymi punktami zwrotnymi:
 \begin{center}
 \includegraphics[scale=0.25]{mapa_punkty_zwrotne.eps}
 \end{center}
-Dobrze jest w tym momencie zasięgnąć opinii doświadczonych szybowników.
+Jeżeli chcesz wykonać przelot warunkowy 50 km to pamiętaj, że 50 km dotyczy
+boku trasy. Twoja trasa musi zawierać bok długości co najmniej 50 km.
+Jeżeli natomiast atakujesz przelot 300 km to ograniczenia są takie, że
+trasa tego przelotu musi być albo trójkątem, albo docelowo-powrotna
+
+Dobrze jest w tym momencie zasięgnąć opinii Szefa Wyszkolenia i innych
+doświadczonych szybowników.
 
 \newpage
 
 \section{Taktyka przelotowa}
-[TODO] % TODO
+Kilka porad.
+\begin{itemize}
+\item Gdy cumulusy są duże, noszenia występują najczęściej po stronie
+    nawietrznej/nasłonecznionej. To znaczy po
+    południowo-zachodniej stronie chmury.
+\item Gdy cumulusy są małe, płaskie, szybko znikają -- zazwyczaj oznacza
+    to, że inwersja występuje w pobliżu poziomu kondensacji. Wtedy zupełnie
+    nie opłaca się wznosić się aż do podstawy gdyż noszenie stanie się
+    dużo słabsze.
+\item Nawet jeżeli widzisz, że chmury są wybudowane i warstwa inwersji jest
+    dużo powyżej podstaw, to i tak często nie opłaca się wykorzystywać komina
+    do końca. Zazwyczaj najsilniejsze noszenie znajduje się sporo poniżej
+    podstawy chmury. Wizualizuje to przykładowe wyjście ze znakomitej
+    prognozy TOPTHERM:
+    \begin{center}
+    \includegraphics[scale=0.5]{toptherm_przyklad.eps}
+    \end{center}
+    \noindent
+    Widać, że (w tym konkretnym przypadku!) najkorzystniejsze warunki
+    można spotkać na wysokościach 700-1500m, przy podstawach
+    nieznacznie przekraczających 2000m
+\item Krążąc pod wiatr możesz tracić wysokość dolotową. Jeżeli komin jest
+    słaby, to próby naboru wysokości mogą nie wystarczyć na pokonanie
+    odległości o jaką wiatr przesunął szybowiec. 
+\item Stosuj teorię McCready'ego. To znaczy, wychodząc z komina ustaw krążek
+    na spodziewaną wartość noszenia w następnym kominie. Wyjątkiem jest
+    sytuacja, gdy następna chmura jest daleko. Wówczas należy ustawić
+    krążek na 0 (czyli maksymalny zasięg względem powietrza).
+    Pamiętaj też o wpływie wiatru!
+    Ogólna zasada mówi, że lecąc pod wiatr dodajemy połowę prędkości
+    wiatru do prędkości wskazywanej przez krążek przelotowy.
+
+\end{itemize}
 \newpage
 
 \section{Lądowanie w terenie przygodnym}
 \subsection{Wybór pól}
 Jeżeli znajdziesz się nisko (500 metrów AGL lub niżej) musisz wybrać pola
-do lądowania (tak, tak: pola a nie jedno pole). Dalsze czynności powinieneś
+do lądowania (tak, tak: pola a nie jedno pole).
+Dalsze czynności powinieneś/powinnaś
 wykonywać pozostając w stożku dolotowym do pól. Decyzja o przerwaniu
 poszukiwania noszeń należy do pilota, jednak uczeń-pilot zobowiązany jest
 podjąć ją na co najmniej 300 metrach AGL. Ponieważ lądowanie w polu 
