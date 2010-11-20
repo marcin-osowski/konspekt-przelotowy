@@ -13,7 +13,7 @@
 #
 #
 
-RESULT=przeloty.pdf
+RESULT=przeloty-konspekt.pdf
 IMAGES=mapa_punkty_zwrotne.eps toptherm_przyklad.eps
 
 #
