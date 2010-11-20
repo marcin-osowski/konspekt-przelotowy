@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{polski}
+\usepackage[fleqn]{amsmath}
 \usepackage{newlfont}
 \usepackage{hyperref}
 \usepackage[dvips]{graphicx}
@@ -50,7 +51,7 @@ ten dokument.
 
 \section{Wstęp, czyli grupa odbiorców tego opracowania}
 Opracowanie to jest skierowane do pilotów i uczniów-pilotów o niewielkim
-doświadczeniu. Wymaga jednak znajomość podstaw latania szybowcowego, w tym
+doświadczeniu. Wymaga jednak znajomości podstaw latania szybowcowego, w tym
 pewnego doświadczenia w lataniu termicznym.
 \newpage
 
@@ -81,8 +82,27 @@ dlatego zawsze konsultuj swoje plany z Szefem Wyszkolenia oraz innymi
 doświadczonymi pilotami.
 
 \subsubsection{Pomoce nawigacyjne}
-Musisz mieć mapę. Jak należy przygotować mapę?
-[TODO] % TODO
+Musisz mieć mapę. Mapa powinna mieć skalę
+w granicach od 1:750~000 do 1:200~000. Mniejsze skale utrudniają
+nawigację, natomiast na mapach o większej skali będziesz miał/miała
+problem z przekładaniem stron podczas lotu.
+
+Jak należy przygotować mapę? Na mapie trzeba zaznaczyć okręgi
+wokół lotniska, o promieniach
+na przykład co 5 km. Okręgi te powinny być opisane minimalnymi
+wysokościami gwarantującymi dolot. Jak określić minimalną wysokość?
+Bezpiecznym założeniem jest doskonałość 20. Ponadto, potrzeba 300 metrów
+aby wykonać krąg do lądowania. Zatem na okręgu o promieniu 5 km potrzebujesz:
+\begin{equation*}
+300\textrm{ m}+\frac{5\textrm{ km}}{20} = 550 \textrm{ m}
+\end{equation*}
+\noindent
+Podobne obliczenia trzeba wykonać dla okręgów o pozostałych promieniach.
+
+Warto tu wspomnieć o szybkim sposobie przeliczania odległości na potrzebną
+wysokość. Mianowicie: jeśli założymy doskonałość 20, to potrzebna wysokość
+w metrach jest dana zależnością:
+$(\textrm{odległość w kilometrach}) \cdot 50$.
 
 Popularną pomocą nawigacyjną jest PDA (nazwa zwyczajowa: ,,lusterko'') 
 wykonujący program przystosowany
