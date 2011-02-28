@@ -14,7 +14,14 @@
 #
 
 RESULT=przeloty-konspekt.pdf
-IMAGES=mapa_punkty_zwrotne.eps toptherm_przyklad.eps
+IMAGES=mapa_punkty_zwrotne.eps \
+	   mapa_przelotowa.eps \
+	   toptherm_przyklad.eps \
+	   montaz_skrzydel_pirat.eps \
+	   montaz_usterzenia_wysokosci_pirat.eps \
+	   montaz_skrzydel_junior.eps \
+	   montaz_usterzenia_wysokosci_junior.eps
+
 
 #
 # You should not need to change anything below this line

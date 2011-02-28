@@ -17,6 +17,14 @@
     urlcolor=black            % color of external links
 }
 
+\newenvironment{packed_enum}{
+\begin{enumerate}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}}
+
+
 \begin{document}
 
 \maketitle
@@ -91,18 +99,48 @@ Jak należy przygotować mapę? Na mapie trzeba zaznaczyć okręgi
 wokół lotniska, o promieniach
 na przykład co 5 km. Okręgi te powinny być opisane minimalnymi
 wysokościami gwarantującymi dolot. Jak określić minimalną wysokość?
-Bezpiecznym założeniem jest doskonałość 20. Ponadto, potrzeba 300 metrów
-aby wykonać krąg do lądowania. Zatem na okręgu o promieniu 5 km potrzebujesz:
+Spróbujmy oszacować doskonałość osiąganą przez szybowiec w rzeczywistych
+warunkach. Rozpatrzmy dwa warianty, oba dla szybowca Junior:
+
+\begin{enumerate}
+\item Załóżmy, że warunki są bezwietrzne (albo szybowiec jest po
+    nawietrznej stronie lotniska), a średnie duszenie netto
+    (czyli ponad opadanie własne szybowca) ma wartość
+    $-0,5 \frac{m}{s}$. Czyli warunki bardzo spokojne. Krążek przelotowy
+    wskazuje jako optymalną prędkość $100 \frac{km}{h}$. Daje
+    to całkowite opadanie szybowca $-1,5 \frac{m}{s}$. Doskonałość:
+    \begin{align*}
+        \frac{100 \frac{km}{h}}{1,5 \frac{m}{s}} = 18,5
+    \end{align*}
+
+\item Weźmy teraz zdecydowanie bardziej niekorzystne warunki. Czołowy
+    wiatr $20 \frac{km}{h}$, duszenie netto $-1,0 \frac{m}{s}$.
+    Według krążka optymalna prędkość to $130 \frac{km}{h}$.
+    Odejmujemy od tego prędkość wiartu, wychodzi $110 \frac{km}{h}$.
+    Całkowite opadanie szybowca: $2,5 \frac{m}{s}$. Doskonałość:
+    \begin{align*}
+        \frac{110 \frac{km}{h}}{2,5 \frac{m}{s}} = 12,22
+    \end{align*}
+\end{enumerate}
+
+\noindent
+Widać stąd, jak trudno jest osiągnąć książkową doskonałość juniora: $35$.
+
+Aby określić bezpieczną wysokość dolotu należy założyć co nieco na temat warunków.
+Przy założeniu braku wiatru (albo pozostawania po nawietrznej stronie lotniska)
+dobrym ograniczeniem dla doskonałości jest $15$. Ponadto, potrzeba 300 metrów
+aby wykonać krąg do lądowania. Zatem na okręgu o promieniu $5 \textrm{ km}$ potrzebujesz:
 \begin{equation*}
-300\textrm{ m}+\frac{5\textrm{ km}}{20} = 550 \textrm{ m}
+300\textrm{ m}+\frac{5\textrm{ km}}{15} = 630 \textrm{ m}
 \end{equation*}
 \noindent
 Podobne obliczenia trzeba wykonać dla okręgów o pozostałych promieniach.
+Należy mieć na uwadze, że powyższe obliczenia nie obejmują sytuacji dolotu
+pod wiatr! Przy silnym wietrze zasięg szybowca może drastycznie zmaleć,
+nawet względem doskonałości $15$.
 
-Warto tu wspomnieć o szybkim sposobie przeliczania odległości na potrzebną
-wysokość. Mianowicie: jeśli założymy doskonałość 20, to potrzebna wysokość
-w metrach jest dana zależnością:
-$(\textrm{odległość w kilometrach}) \cdot 50$.
+Przykład przygotowanej mapy znajdziesz w punkcie opisującym przygotowanie
+trasy.
 
 Popularną pomocą nawigacyjną jest PDA (nazwa zwyczajowa: ,,lusterko'') 
 wykonujący program przystosowany
@@ -191,7 +229,7 @@ i frontów atmosferycznych.
 niestety słabo wpasowywuje się w pogodę, natomiast UM jest znakomity do
 wglądu krótkoterminowego (obliczany jest co 6 godzin na 48 godzin do przodu).
 
-\item \url{http://ows.public.sembach.af.mil/index.cfm?section=SFCProg} -- 
+\item \url{http://ows.public.sembach.af.mil/index.cfm?section=SFCProg} -- \\
 prognoza przygotowywana przez NATO. Bardzo skuteczna, natomiast nie
 skupia się na wszystkich zjawiskach (przewiduje tylko układ ciśnień i
 schemat frontów atmosferycznych).
@@ -219,6 +257,19 @@ trasa tego przelotu musi być albo trójkątem, albo docelowo-powrotna
 
 Dobrze jest w tym momencie zasięgnąć opinii Szefa Wyszkolenia i innych
 doświadczonych szybowników.
+
+\textit{Przykład.} Trasa docel-powrót 119 km Olsztyn-Lipowiec-Olsztyn.
+Zawiera bok o długości $> 50$ km, zatem nadaje się do srebrnej odznaki.
+Trasę nanosimy na mapę, zaznaczamy kierunki. W połączeniu z kółkami
+dolotowymi wygląda to mniej więcej tak:
+\begin{center}
+\includegraphics[scale=0.30]{mapa_przelotowa.eps}
+\end{center}
+
+\noindent
+Przykład mapy gotowej do przelotu. Mapę trzymamy kursem do góry, tu
+wybrany został kierunek z Lipowca do Olsztyna (a więc powrotny).
+
 
 \newpage
 
@@ -380,5 +431,206 @@ Jeżeli są ofiary wypadku to w pierwszej kolejności wykonaj telefon na numer
 alarmowy (112 lub 999). Zabezpiecz teren wokół szybowca (tak, aby dało się
 zebrać konieczne dowody). Poinformuj Aeroklub i Państwową Komisię Badania
 Wypadków Lotniczych. Wykonaj serię zdjęć jeżeli masz aparat fotograficzny.
+
+\newpage
+\section{Dodatki}
+\subsection{Schemat montażu/demontażu Pirata}
+
+\noindent
+Tok pracy przy montażu:
+\begin{enumerate}
+\item Otworzyć limuzynę i wyjąć sworznie główne. Zdjąć pokrywę
+   grzbietową. Wyjąć sworznie nośne.
+\item Oczyścić i nasmarować wazeliną techniczną powierzchnie robocze okuć,
+   sworzni, gniazd oraz złącz napędów.
+\item Przytrzymać kadłub i nałożyć odpowiednio środkową część skrzydła.
+   Założyć sworznie główne i zabezpieczyć rękojeści zasuwkami. Połączyć
+   napęd lotek i założyć agrafkę. Połączyć i zabezpieczyć napęd hamulców
+   aerodynamicznych.
+\item Zaśrubować klucz montażowy z jednym ze sworzni nośnych. Zestawić
+   odpowiednio zewnętrzną część skrzydła, aż do pokrycia się okuć,
+   następnie założyć sworzeń nośny. Ustawić otworek sworznia w
+   płaszczyźnie lotu i założyć agrafkę zabezpieczającą (od przodu do tyłu).
+   Zwolnić klucz montażowy. Połączyć i zabezpieczyć napęd lotki
+   (przez wziernik w dolnej powierzchni skrzydła). \\
+\begin{tabular}{|l|}
+\hline
+Uwaga: \\
+  SWORZEŃ NOŚNY MOŻNA ZAKŁADAĆ TYLKO ZA POMOCĄ \\
+  KLUCZA, PRZEZ WCISKANIE Z JEDNOCZESNYM OBROTEM \\
+  WAHADŁOWYM. WBIJANIE MŁOTKIEM JEST NIEDOZWOLONE!\\
+\hline
+\end{tabular}
+
+   Podobnie założyć drugą zewnętrzną część skrzydła.
+\item Ustawić w pobliżu neutrum klapkę wyważającą oraz jej suwak w
+   kabinie. Zaśrubować klucz montażowy ze śrubą mocującą usterzenie
+   wysokości i nałożyć usterzenie na okucie [1] i gniazdo [3]. Napęd klapki
+   wyważającej łączy się samoczynnie. Wkręcić śrubę mocującą [4] i
+   dociągnąć ją siłą jednej ręki poruszając lekko usterzeniem wysokości.
+   Śrubę dociągnąć aż do zlikwidowania luzu. Po dociągnięciu, ramię
+   klucza powinno być ustawione w płaszczyźnie symetrii szybowca. lub
+   prostopadle do niej.
+\item Zdjąć klucz i zamknąć wieczko. Do wkręcenia wkręta zabezpieczającego
+   użyć śrubokręta.
+\item Połączyć i zabezpieczyć napęd steru wysokości.
+\item Sprawdzić wszystkie połączenia oraz poruszyć kilkakrotnie napędami
+   sterów, hamulców i klapki wyważającej. Zamknąć wzierniki i założyć
+   pokrywę grzbietową.
+\end{enumerate}
+
+\newpage
+\noindent
+Tok pracy przy demontażu:
+\begin{enumerate}
+    \item Rozłączyć napędy:
+    \begin{itemize}
+        \item centralne (złącza napędów lotek i hamulców są dostępne po
+             zdjęciu pokrywy grzbietowej),
+        \item zewnętrzne lotkowe (przez dolne wzierniki skrzydłowe),
+        \item steru wysokości (złącze przy sterze wysokości).
+    \end{itemize}
+    \item Otworzyć wieczko na usterzeniu wysokości, założyć klucz montażowy,
+         wykręcić śrubę i zdjąć usterzenie.
+    \item Odbezpieczyć sworzeń nośny dowolnego skrzydła (zdjąć agrafkę) i
+         założyć klucz montażowy. Przytrzymać (odciążyć) demontowaną część
+         skrzydła oraz końce obu skrzydeł i wyciągnąć sworzeń nośny. Zdjąć
+         zewnętrzną część skrzydła. Sworzeń założyć z powrotem, do okuć części
+         środkowej i zabezpieczyć agrafką. Podobnie zdemontować drugą
+         zewnętrzną część skrzydła.
+    \item Odbezpieczyć i wyciągnąć sworznie główne. Zdjąć środkową część
+         skrzydła. Sworznie założyć z powrotem do okuć kadłuba i zabezpieczyć
+         zasuwkami.
+\end{enumerate}
+
+\newpage
+\subsection{Montaż usterzenia wysokości Pirata}
+
+\begin{center}
+\includegraphics[scale=0.38]{montaz_usterzenia_wysokosci_pirat.eps}
+\end{center}
+
+\begin{packed_enum}
+\item[1] -- okucie duralowe ,,T''
+\item[1a] -- gniazdo okucia ,,T''
+\item[2] -- czop przedni
+\item[3] -- gniazdo czopa
+\item[4] -- śruba mocująca
+\item[4a] -- gniazdo śruby
+\item[5] -- wieczko zawiasowe z wkrętem
+\item[6] -- palec zabezpieczający
+\item[7] -- widelec napędu klapki wyważającej
+\item[8] -- dźwigienka napędu klapki wyważającej
+\item[9] -- popychacz napędu steru wysokości ze złączem
+\item[10] -- dźwigienka steru wysokości
+\item[15] -- klucz montażowy ze śrubą i śrubokrętem
+\item[a)] -- właściwe ustawienie śruby mocującej przed zamknięciem
+wieczka (wykroje dla klucz ustawione w płaszczyźnie symetrii
+szybowca).
+\end{packed_enum}
+
+\newpage
+\subsection{Montaż skrzydła Pirata}
+
+\begin{center}
+\includegraphics[scale=0.36]{montaz_skrzydel_pirat.eps}
+\end{center}
+
+\begin{packed_enum}
+\item[1, 2] -- prawa para okuć głównych
+\item[3, 4] -- lewa para okuć głównych
+\item[5] -- sworznie główne
+\item[6] -- zasuwki zabezpieczające
+\item[7] -- okucie nośne zewnętrznej części skrzydła
+\item[8] -- okucie nośne środkowej części skrzydła
+\item[9, 10] -- okucia zderzakowe zewnętrznej części skrzydła
+\item[11, 12] -- okucia zderzakowe środkowej części skrzydła
+\item[13] -- sworzeń nośny
+\item[14] -- agrafka
+\item[15] -- klucz montażowy „T”
+\item[15a] -- śruba z pokrętłem
+\item[15b] -- zęby robocze
+\item[15c] -- śrubokręt
+\item[16] -- pokrywa grzbietowa
+\item[17] -- popychacz napędu lotek ze złączem i agrafką
+\item[18] -- złącza napędów hamulców
+\item[19] -- wziernik na dolnej powierzchni skrzydła
+\item[20] -- popychacz ze złączem napędu lotki
+\item[21] -- czop złącza
+\item[22] -- tuleja z ramieniem widełkowym
+\item[23] -- zatrzask
+\item[24] -- przetyczka
+\end{packed_enum}
+
+\newpage
+\subsection{Schemat montażu/demontażu skrzydeł Juniora}
+
+\begin{center}
+\includegraphics[scale=0.36]{montaz_skrzydel_junior.eps}
+\end{center}
+
+\begin{packed_enum}
+\item[1] -- trzony dźwigarów skrzydeł
+\item[2] -- czopy kadłuba
+\item[3] -- czopy dźwigarów
+\item[4] -- gniazda czopów
+\item[5] -- dźwignia montażowa
+\item[6] -- stopki oporowe dźwigarów
+\item[7] -- sworzeń
+\item[8] -- otwór zabezpieczający
+\item[9] -- agrafka
+\end{packed_enum}
+
+\noindent
+Schemat montażu:
+\begin{enumerate}
+\item Przestawić suwak hamulców aerodynamicznych w kabinie do przodu
+   drążek ustawić w płaszczyźnie symetrii.
+\item Hamulce aerodynamiczne schować, lotki ustawić w neutrum.
+\item Prawe a następnie lewe skrzydło zestawić z kadłubem. Podczas wsuwania
+   trzonów dźwigarowych [1] wystające czopy dźwigarów i kratownicy
+   kadłuba [3] muszą wejść w odpowiednie gniazda [4] na żebrach przy-
+   kadłubowych skrzydeł. Również muszą się połączyć złącza napędów lotek
+   i hamulców aerodynamicznych.
+\item Dźwignię montażową [5] założyć na stopki oporowe [6] dźwigarów i
+   dociągnąć ostatecznie obydwa skrzydła do kadłuba.
+\item Połączyć dźwigary sworzniem [7], poprzeczkę sworznia wprowadzić do
+   otworu [8] i zabezpieczyć agrafką [9].
+\end{enumerate}
+
+\noindent
+Demontaż skrzydeł: w kolejności odwrotnej do montażu wyjąć
+sworzeń [7] i zdjąć skrzydła.
+
+\newpage
+\subsection{Schemat montażu/demontażu usterzenia wysokości Juniora}
+
+\begin{center}
+\includegraphics[scale=0.38]{montaz_usterzenia_wysokosci_junior.eps}
+\end{center}
+
+\begin{packed_enum}
+\item[1] -- usterzenie wysokości,
+\item[2] -- statecznik kierunku,
+\item[3] -- końcówka szybkorozłączna,
+\item[4] -- dźwigienka steru wysokości,
+\item[5] -- sworzeń,
+\item[6] -- agrafka,
+\item[7] -- śruba mocująca ster wysokości
+\end{packed_enum}
+
+\noindent
+Schemat montażu:
+\begin{enumerate}
+\item Uchwyt urządzenia wyważającego w kabinie przestawić do przodu.
+\item Nałożyć usterzenie [1] na statecznik kierunku.
+\item Połączyć złącze popychacza [3] z dźwignią steru wysokości [4].
+\item Połączyć okucia przez wprowadzenie sworznia [5] w otwór w krawędzi
+    natarcia statecznika pionowego i zapiąć agrafkę [6].
+\end{enumerate}
+
+\noindent
+Demontaż usterzenia wysokości: W kolejności odwrotnej wyjąć sworzeń [5],
+rozłączyć złącze napędu [3] i zdjąć usterzenie wysokości.
 
 \end{document} 
