@@ -106,7 +106,7 @@ warunkach. Rozpatrzmy dwa warianty, oba dla szybowca Junior:
 \item Załóżmy, że warunki są bezwietrzne (albo szybowiec jest po
     nawietrznej stronie lotniska), a średnie duszenie netto
     (czyli ponad opadanie własne szybowca) ma wartość
-    $-0,5 \frac{m}{s}$. Czyli warunki bardzo spokojne. Krążek przelotowy
+    $-0,5 \frac{m}{s}$. Warunki bardzo spokojne. Krążek przelotowy
     wskazuje jako optymalną prędkość $100 \frac{km}{h}$. Daje
     to całkowite opadanie szybowca $-1,5 \frac{m}{s}$. Doskonałość:
     \begin{align*}
@@ -191,7 +191,7 @@ Istotna część: co koniecznie należy ustawić przed lotem.
 \begin{enumerate}
 \item Imię, nazwisko pilota
 \item Typ szybowca, znaki szybowca
-\item Deklaracja zadania (tylko przeloty)
+\item Deklaracja zadania (tylko przeloty).
     Aby poprawnie zadeklarować zadanie musisz wprowadzić punkty zwrotne
     zaplanowanej trasy, po czym zadeklarować trasę. Czyli doprowadzić
     logger do komunikatu ,,Task~declared'' (to jest ważne, trasa nie
@@ -245,31 +245,67 @@ Wymaga znajomości specjalistycznych skrótów.
 Do sprawdzenia na stronie \url{http://amc.pata.pl/}, zakładka
 ,,AUP bieżący'' lub zakładka ,,Elementy przestrzeni/AUP''. Można też
 telefonicznie, numery do odnalezienia na stronie AMC PATA.
-\subsubsection{Wytyczanie trasy}
-Przydatna jest mapa z zaznaczonymi punktami zwrotnymi:
+
+\newpage
+
+\subsubsection{Wytyczanie trasy, sektory punktów zwrotnych}
+Do wytyczania trasy przydatna jest mapa z zaznaczonymi punktami zwrotnymi:
 \begin{center}
 \includegraphics[scale=0.25]{mapa_punkty_zwrotne.eps}
 \end{center}
 Jeżeli chcesz wykonać przelot warunkowy 50 km to pamiętaj, że 50 km dotyczy
 boku trasy. Twoja trasa musi zawierać bok długości co najmniej 50 km.
 Jeżeli natomiast atakujesz przelot 300 km to ograniczenia są takie, że
-trasa tego przelotu musi być albo trójkątem, albo docelowo-powrotna
+trasa tego przelotu musi być albo trójkątem, albo docelowo-powrotna.
 
 Dobrze jest w tym momencie zasięgnąć opinii Szefa Wyszkolenia i innych
 doświadczonych szybowników.
 
-\textit{Przykład.} Trasa docel-powrót 119 km Olsztyn-Lipowiec-Olsztyn.
+\newpage
+
+\textit{Przykład trasy.} Trasa docel-powrót 119 km Olsztyn-Lipowiec-Olsztyn.
 Zawiera bok o długości $> 50$ km, zatem nadaje się do srebrnej odznaki.
 Trasę nanosimy na mapę, zaznaczamy kierunki. W połączeniu z kółkami
 dolotowymi wygląda to mniej więcej tak:
 \begin{center}
-\includegraphics[scale=0.30]{mapa_przelotowa.eps}
+\includegraphics[scale=0.28]{mapa_przelotowa.eps}
 \end{center}
 
 \noindent
 Przykład mapy gotowej do przelotu. Mapę trzymamy kursem do góry, tu
 wybrany został kierunek z Lipowca do Olsztyna (a więc powrotny).
 
+
+Aby przelot został uznany należy zaliczać punkty zwrotne zgodnie z pewnymi
+ustalonymi schematami. Schematami tymi są kształty sektorów otaczających
+punkty trasy. W przyrodzie występują co najmniej dwa popularne systemy:
+\begin{enumerate}
+\item FAI Foto-sektor.
+    \begin{itemize}
+    \item Linia startu i linia mety - odcinek długości 1~km, prostopadły
+        do sąsiadującego odcinka trasy. Aby zaliczyć należy ją przekroczyć.
+        Przykład:
+            \begin{center}
+            \includegraphics[scale=0.22]{linia_startu_mety.eps}
+            \end{center}
+    \item Punkt zwrotny - przestrzeń ponad kątem prostym o wierzchołku w
+        zaliczanym punkcie i dwusiecznej przedłużającej do prostej dwusieczną
+        sąsiadujących odcinków trasy. Aby zaliczyć punkt należy znaleźć się
+        wewnątrz tej przestrzeni. Przykład:
+            \begin{center}
+            \includegraphics[scale=0.22]{przyklad_foto_sektora.eps}
+            \end{center}
+    \end{itemize}
+\item Cylinder 500m.
+    \begin{itemize}
+    \item Linia startu i linia mety - jak wyżej.
+    \item Punkt zwrotny - pionowy cylinder o promieniu 500 m wokół
+        zaliczanego punktu. Przykład:
+            \begin{center}
+            \includegraphics[scale=0.22]{przyklad_cylindra.eps}
+            \end{center}
+    \end{itemize}
+\end{enumerate}
 
 \newpage
 
@@ -282,12 +318,12 @@ Kilka porad.
 
 \item Gdy cumulusy są małe, płaskie, szybko znikają -- zazwyczaj oznacza
     to, że inwersja występuje w pobliżu poziomu kondensacji. Wtedy zupełnie
-    nie opłaca się wznosić się aż do podstawy gdyż noszenie stanie się
+    nie opłaca się wznosić się aż do podstawy gdyż średnie noszenie stanie się
     dużo słabsze.
 
 \item Nawet jeżeli widzisz, że chmury są wybudowane i warstwa inwersji jest
     dużo powyżej podstaw, to i tak często nie opłaca się wykorzystywać komina
-    do końca. Zazwyczaj najsilniejsze noszenie znajduje się sporo poniżej
+    do końca. Zazwyczaj najsilniejsze noszenie znajduje się trochę poniżej
     podstawy chmury. Wizualizuje to przykładowe wyjście ze znakomitej
     prognozy TOPTHERM:
     \begin{center}
@@ -330,9 +366,9 @@ Kilka porad.
 
 \section{Lądowanie w terenie przygodnym}
 \subsection{Wybór pól}
-Jeżeli znajdziesz się nisko (500 metrów AGL lub niżej) musisz wybrać pola
-do lądowania (tak, tak: pola a nie jedno pole).
-Dalsze czynności powinieneś/powinnaś
+Jeżeli znajdziesz się nisko (500 metrów AGL -- Above Ground Level
+lub niżej) musisz wybrać pola do lądowania (tak, tak: pola a nie
+jedno pole). Dalsze czynności powinieneś/powinnaś
 wykonywać pozostając w stożku dolotowym do pól. Decyzja o przerwaniu
 poszukiwania noszeń należy do pilota, jednak uczeń-pilot zobowiązany jest
 podjąć ją na co najmniej 300 metrach AGL. Ponieważ lądowanie w polu 

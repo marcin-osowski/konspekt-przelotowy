@@ -20,7 +20,10 @@ IMAGES=mapa_punkty_zwrotne.eps \
 	   montaz_skrzydel_pirat.eps \
 	   montaz_usterzenia_wysokosci_pirat.eps \
 	   montaz_skrzydel_junior.eps \
-	   montaz_usterzenia_wysokosci_junior.eps
+	   montaz_usterzenia_wysokosci_junior.eps \
+	   linia_startu_mety.eps \
+	   przyklad_foto_sektora.eps \
+	   przyklad_cylindra.eps
 
 
 #
