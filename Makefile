@@ -53,17 +53,22 @@ evince: $(RESULT)
 %.eps: %.epsi
 	cp $< $@
 
-%.eps: %.jpg
+%.eps: images/%.jpg
 	cd bin/; ./jpeg2eps ../$<
+	cp images/$@ .
 
 rebuild: clean all
 
 all: $(RESULT)
 
-clean:
+remove_garbage:
 	rm -f *~
 	rm -f *.ps
-	rm -f *.pdf
 	rm -f *.dvi *.aux *.log *.toc *.out
 	rm -f *.epsi *.eps
+	cd images; make remove_garbage
+
+
+clean: remove_garbage
+	rm -f *.pdf
 
